@@ -1,10 +1,10 @@
 #!/bin/bash
 
 CLIENT="lighthouse"
-NETWORK="prater"
+NETWORK="mainnet"
 VALIDATOR_PORT=3500
 VALIDATORS_FILE="/root/.lighthouse/validators/validator_definitions.yml"
-WEB3SIGNER_API="http://web3signer.web3signer-${NETWORK}.dappnode:9000"
+WEB3SIGNER_API="http://web3signer.web3signer.dappnode:9000"
 
 # - Docs: https://lighthouse-book.sigmaprime.io/validator-web3signer.html
 # - FORMAT for each new pubkey:
@@ -30,7 +30,7 @@ function write_validator_definitions() {
     done
 }
 
-WEB3SIGNER_RESPONSE=$(curl -s -w "%{http_code}" -X GET -H "Content-Type: application/json" -H "Host: validator.${CLIENT}-${NETWORK}.dappnode" "${WEB3SIGNER_API}/eth/v1/keystores")
+WEB3SIGNER_RESPONSE=$(curl -s -w "%{http_code}" -X GET -H "Content-Type: application/json" -H "Host: validator.${CLIENT}.dappnode" "${WEB3SIGNER_API}/eth/v1/keystores")
 HTTP_CODE=${WEB3SIGNER_RESPONSE: -3}
 CONTENT=$(echo "${WEB3SIGNER_RESPONSE}" | head -c-4)
 

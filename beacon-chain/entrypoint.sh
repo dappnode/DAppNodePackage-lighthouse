@@ -5,7 +5,7 @@
 
 exec lighthouse \
     --debug-level $DEBUG_LEVEL \
-    --network prater \
+    --network mainnet \
     beacon_node \
     --datadir /root/.lighthouse \
     --eth1 --eth1-endpoints $HTTP_WEB3PROVIDER \

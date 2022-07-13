@@ -1,20 +1,20 @@
 [
     {
         "labels": {
-            "package": "lighthouse-prater.dnp.dappnode.eth",
-            "service": "beacon-chain.lighthouse-prater.dappnode"
+            "package": "lighthouse.dnp.dappnode.eth",
+            "service": "beacon-chain.lighthouse.dappnode"
         },
         "targets": [
-            "beacon-chain.lighthouse-prater.dappnode:8008"
+            "beacon-chain.lighthouse.dappnode:8008"
         ]
     },
     {
         "labels": {
-            "package": "lighthouse-prater.dnp.dappnode.eth",
-            "service": "validator.lighthouse-prater.dappnode"
+            "package": "lighthouse.dnp.dappnode.eth",
+            "service": "validator.lighthouse.dappnode"
         },
         "targets": [
-            "validator.lighthouse-prater.dappnode:8008"
+            "validator.lighthouse.dappnode:8008"
         ]
     }
 ]

@@ -89,7 +89,7 @@
       "pluginVersion": "7.4.3",
       "targets": [
         {
-          "expr": "lighthouse_info{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "lighthouse_info{instance=\"validator.lighthouse.dappnode:8008\"}",
           "interval": "",
           "legendFormat": "",
           "queryType": "randomWalk",
@@ -159,7 +159,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_beacon_block_proposer_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_beacon_block_proposer_count{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -260,7 +260,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_beacon_attester_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_beacon_attester_count{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -386,7 +386,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "system_loadavg_1{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "system_loadavg_1{instance=\"validator.lighthouse.dappnode:8008\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -482,7 +482,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "system_virt_mem_free_bytes{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "system_virt_mem_free_bytes{instance=\"validator.lighthouse.dappnode:8008\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -578,7 +578,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "process_resident_memory_bytes{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "process_resident_memory_bytes{instance=\"validator.lighthouse.dappnode:8008\"}",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -703,7 +703,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_genesis_distance_seconds{instance=\"validator.lighthouse-prater.dappnode:8008\"} * -1",
+          "expr": "vc_genesis_distance_seconds{instance=\"validator.lighthouse.dappnode:8008\"} * -1",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -802,7 +802,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_validators_enabled_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_validators_enabled_count{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -903,7 +903,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_validators_total_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_validators_total_count{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1031,7 +1031,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_signed_beacon_blocks_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_signed_beacon_blocks_total{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1132,7 +1132,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_signed_attestations_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_signed_attestations_total{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1233,7 +1233,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_signed_aggregates_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_signed_aggregates_total{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1334,7 +1334,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "vc_signed_selection_proofs_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "vc_signed_selection_proofs_total{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1462,7 +1462,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(vc_duties_service_task_times_seconds_sum{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])\n/\nrate(vc_duties_service_task_times_seconds_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])",
+          "expr": "rate(vc_duties_service_task_times_seconds_sum{instance=\"validator.lighthouse.dappnode:8008\"}[30s])\n/\nrate(vc_duties_service_task_times_seconds_count{instance=\"validator.lighthouse.dappnode:8008\"}[30s])",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1563,7 +1563,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(vc_fork_service_task_times_seconds_sum{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])\n/\nrate(vc_fork_service_task_times_seconds_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])",
+          "expr": "rate(vc_fork_service_task_times_seconds_sum{instance=\"validator.lighthouse.dappnode:8008\"}[30s])\n/\nrate(vc_fork_service_task_times_seconds_count{instance=\"validator.lighthouse.dappnode:8008\"}[30s])",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1664,7 +1664,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(vc_attestation_service_task_times_seconds_sum{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])\n/\nrate(vc_attestation_service_task_times_seconds_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])",
+          "expr": "rate(vc_attestation_service_task_times_seconds_sum{instance=\"validator.lighthouse.dappnode:8008\"}[30s])\n/\nrate(vc_attestation_service_task_times_seconds_count{instance=\"validator.lighthouse.dappnode:8008\"}[30s])",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1765,7 +1765,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(vc_beacon_block_service_task_times_seconds_sum{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])\n/\nrate(vc_beacon_block_service_task_times_seconds_count{instance=\"validator.lighthouse-prater.dappnode:8008\"}[30s])",
+          "expr": "rate(vc_beacon_block_service_task_times_seconds_sum{instance=\"validator.lighthouse.dappnode:8008\"}[30s])\n/\nrate(vc_beacon_block_service_task_times_seconds_count{instance=\"validator.lighthouse.dappnode:8008\"}[30s])",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1893,7 +1893,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(info_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}[1m])",
+          "expr": "rate(info_total{instance=\"validator.lighthouse.dappnode:8008\"}[1m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -1991,7 +1991,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(warn_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}[1m])",
+          "expr": "rate(warn_total{instance=\"validator.lighthouse.dappnode:8008\"}[1m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -2091,7 +2091,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(error_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}[1m])",
+          "expr": "rate(error_total{instance=\"validator.lighthouse.dappnode:8008\"}[1m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -2189,7 +2189,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "crit_total{instance=\"validator.lighthouse-prater.dappnode:8008\"}",
+          "expr": "crit_total{instance=\"validator.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,

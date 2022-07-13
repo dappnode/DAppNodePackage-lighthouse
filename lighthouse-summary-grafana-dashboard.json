@@ -162,7 +162,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "avg(beacon_head_state_total_validators_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"})",
+          "expr": "avg(beacon_head_state_total_validators_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"})",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -247,7 +247,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "avg(beacon_head_state_withdrawn_validators_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"})",
+          "expr": "avg(beacon_head_state_withdrawn_validators_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"})",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -481,7 +481,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "avg(beacon_head_state_slashed_validators_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"})",
+          "expr": "avg(beacon_head_state_slashed_validators_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"})",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -566,7 +566,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "avg(beacon_head_state_active_validators_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"})",
+          "expr": "avg(beacon_head_state_active_validators_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"})",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -1040,7 +1040,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "slotclock_present_slot{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"} - beacon_head_state_slot{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "slotclock_present_slot{instance=\"beacon-chain.lighthouse.dappnode:8008\"} - beacon_head_state_slot{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -1139,7 +1139,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "slotclock_present_epoch{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"} - beacon_head_state_current_justified_epoch{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "slotclock_present_epoch{instance=\"beacon-chain.lighthouse.dappnode:8008\"} - beacon_head_state_current_justified_epoch{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1240,7 +1240,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "slotclock_present_epoch{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"} - beacon_head_state_finalized_epoch{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "slotclock_present_epoch{instance=\"beacon-chain.lighthouse.dappnode:8008\"} - beacon_head_state_finalized_epoch{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -1339,7 +1339,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_participation_prev_epoch_attester{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_participation_prev_epoch_attester{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1440,7 +1440,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_participation_prev_epoch_target_attester{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_participation_prev_epoch_target_attester{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1541,7 +1541,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_participation_prev_epoch_head_attester{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_participation_prev_epoch_head_attester{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1643,7 +1643,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_attn_observation_epoch_attesters{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_attn_observation_epoch_attesters{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1745,7 +1745,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_attn_observation_epoch_aggregators{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_attn_observation_epoch_aggregators{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1846,7 +1846,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_head_state_validator_balances_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"} / 1000000000",
+          "expr": "beacon_head_state_validator_balances_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"} / 1000000000",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -1945,7 +1945,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_head_state_active_validators_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_head_state_active_validators_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -2044,7 +2044,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_head_state_total_validators_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_head_state_total_validators_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -2143,7 +2143,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_head_state_finalized_root{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_head_state_finalized_root{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -2241,7 +2241,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "beacon_fork_choice_reorg_total{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}",
+          "expr": "beacon_fork_choice_reorg_total{instance=\"beacon-chain.lighthouse.dappnode:8008\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -3692,7 +3692,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(beacon_block_processing_seconds_sum{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[30s])\n/\nrate(beacon_block_processing_seconds_count{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[30s])",
+          "expr": "rate(beacon_block_processing_seconds_sum{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[30s])\n/\nrate(beacon_block_processing_seconds_count{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[30s])",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -3790,7 +3790,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(beacon_fork_choice_seconds_sum{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[1m])\n/\nrate(beacon_fork_choice_seconds_count{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[1m])",
+          "expr": "rate(beacon_fork_choice_seconds_sum{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[1m])\n/\nrate(beacon_fork_choice_seconds_count{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[1m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -3981,7 +3981,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(beacon_block_processing_block_root_seconds_sum{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[5m])\n/\nrate(beacon_block_processing_block_root_seconds_count{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[5m])",
+          "expr": "rate(beacon_block_processing_block_root_seconds_sum{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[5m])\n/\nrate(beacon_block_processing_block_root_seconds_count{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[5m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -4077,7 +4077,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(beacon_block_processing_state_root_seconds_sum{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[5m])\n/\nrate(beacon_block_processing_state_root_seconds_count{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[5m])",
+          "expr": "rate(beacon_block_processing_state_root_seconds_sum{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[5m])\n/\nrate(beacon_block_processing_state_root_seconds_count{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[5m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"
@@ -4485,7 +4485,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "rate(beacon_persist_chain_sum{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[1m])\n/\nrate(beacon_persist_chain_count{instance=\"beacon-chain.lighthouse-prater.dappnode:8008\"}[1m])",
+          "expr": "rate(beacon_persist_chain_sum{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[1m])\n/\nrate(beacon_persist_chain_count{instance=\"beacon-chain.lighthouse.dappnode:8008\"}[1m])",
           "format": "time_series",
           "intervalFactor": 1,
           "refId": "A"

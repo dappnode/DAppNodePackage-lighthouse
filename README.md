@@ -1,6 +1,6 @@
-# Lighthouse DAppNode package (prater config)
+# Lighthouse DAppNode package
 
-**Lighthouse prater ETH2.0 Beacon chain + validator**
+**Lighthouse ETH2.0 Beacon chain + validator**
 
 Lighthouse is an Ethereum consensus client that connects to other Ethereum consensus clients to form a resilient and decentralized proof-of-stake blockchain.
 

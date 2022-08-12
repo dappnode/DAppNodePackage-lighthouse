@@ -9,16 +9,17 @@ services:
     volumes:
       - "beacon-data:/root/.lighthouse"
     ports:
-      - 9000/tcp
-      - 9000/udp
+      - "9104:9104/tcp"
+      - "9104:9104/udp"
     restart: unless-stopped
     security_opt:
       - "seccomp:unconfined"
     environment:
       DEBUG_LEVEL: info
       BEACON_API_PORT: 3500
-      HTTP_WEB3PROVIDER: ""
+      HTTP_ENGINE: ""
       CORSDOMAIN: "http://lighthouse.dappnode"
+      P2P_PORT: 9104
       CHECKPOINT_SYNC_URL: ""
       EXTRA_OPTS: ""
   validator:

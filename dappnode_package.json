@@ -15,10 +15,10 @@
   "categories": ["Blockchain", "ETH2.0"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sigp/lighthouse.git"
+    "url": "https://github.com/dappnode/DAppNodePackage-lighthouse.git"
   },
   "bugs": {
-    "url": "https://github.com/sigp/lighthouse/issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-lighthouse/issues"
   },
   "links": {
     "ui": "http://ui.web3signer.dappnode?signer_url=http://web3signer.web3signer.dappnode:9000",

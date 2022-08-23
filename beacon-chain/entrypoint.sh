@@ -18,4 +18,6 @@ exec lighthouse \
     --metrics-address 0.0.0.0 \
     --metrics-port 8008 \
     --metrics-allow-origin "*" \
+    --execution-endpoint $HTTP_ENGINE \
+    --execution-jwt "/jwtsecret" \
     $EXTRA_OPTS

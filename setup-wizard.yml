@@ -22,6 +22,8 @@ fields:
       - Geth - `http://geth.dappnode:8551` - [Install link](http://my.dappnode/#/installer/geth.dnp.dappnode.eth)
 
       - Nethermind - `http://nethermind.public.dappnode:8551` - [Install link](http://my.dappnode/#/installer/nethermind.public.dappnode.eth)
+      
+      - Erigon - `http://erigon.dappnode:8551` - [Install link](http://my.dappnode/#/installer/erigon.dnp.dappnode.eth)
   - id: checkpointSyncUrl
     target:
       type: environment

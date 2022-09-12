@@ -22,6 +22,7 @@ services:
       P2P_PORT: 9104
       CHECKPOINT_SYNC_URL: ""
       EXTRA_OPTS: ""
+      CONFIG_MODE: basic
   validator:
     image: "validator.lighthouse.dnp.dappnode.eth:0.1.0"
     build:

@@ -3,10 +3,10 @@ fields:
   - title: Execution Client Config Mode
     id: config_mode
     description: >-
-      If you're using an **unofficial** Execution Client on Dappnode, you might have to enable this option to use that Execution Client in the Engine API settings of Lighthouse.   
+      Advanced and Development Use Only: Please only enable this option if you are confident you know what you are doing, if you have any doubts, please use the basic setting.
 
 
-      Set this to **"advanced"** to pass in an arbitrary Execution Client API or leave on **basic** to choose one below.
+      Set this to **"advanced"** to pass in an arbitrary Execution Client Engine-API or leave on **basic** to choose one below.
     target:
       type: environment
       name: CONFIG_MODE
@@ -58,7 +58,7 @@ fields:
 
       Consensus Clients require access to an Execution Client in order to operate properly.   
 
-      You can usually find the Engine API in the Execution Clients Package Info.
+      You can find the Engine API in the Execution Client's Package Info.
     if: { "config_mode": { "enum": ["advanced"] } }
   - id: GRAFFITI
     target:

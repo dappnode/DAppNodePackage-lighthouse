@@ -1,6 +1,6 @@
 version: "2"
 fields:
-  - title: Execution Client Config Mode
+  - id: config_mode
     id: config_mode
     description: >-
       Advanced and Development Use Only: Please only enable this option if you are confident you know what you are doing, if you have any doubts, please use the basic setting.

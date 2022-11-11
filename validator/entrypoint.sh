@@ -46,6 +46,11 @@ else
     fi
 fi
 
+oLang=$LANG oLcAll=$LC_ALL
+LANG=C LC_ALL=C 
+graffitiString=${GRAFFITI:0:32}
+LANG=$oLang LC_ALL=$oLcAll
+
 exec -c lighthouse \
     --debug-level=${DEBUG_LEVEL} \
     --network=${NETWORK} \
@@ -54,7 +59,7 @@ exec -c lighthouse \
     --init-slashing-protection \
     --datadir /root/.lighthouse \
     --beacon-nodes $BEACON_NODE_ADDR \
-    --graffiti="${GRAFFITI:0:32}" \
+    --graffiti="${graffitiString}" \
     --http \
     --http-address 0.0.0.0 \
     --http-port ${VALIDATOR_PORT} \

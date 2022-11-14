@@ -8,4 +8,4 @@ COPY security/.secp-sk /root/.lighthouse/validators/
 
 COPY entrypoint.sh /usr/local/bin
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]

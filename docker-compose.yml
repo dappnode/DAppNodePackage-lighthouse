@@ -17,7 +17,6 @@ services:
     environment:
       DEBUG_LEVEL: info
       BEACON_API_PORT: 3500
-      HTTP_ENGINE: ""
       CORSDOMAIN: "http://lighthouse.dappnode"
       P2P_PORT: 9104
       CHECKPOINT_SYNC_URL: ""

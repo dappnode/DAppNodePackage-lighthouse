@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Concatenate EXTRA_OPTS string
-[[ -n "$CHECKPOINT_SYNC_URL" ]] && EXTRA_OPTS="${EXTRA_OPTS} --checkpoint-sync-url=${CHECKPOINT_SYNC_URL} --checkpoint-sync-url-timeout 300"
+[[ -n "$CHECKPOINT_SYNC_URL" ]] && EXTRA_OPTS="${EXTRA_OPTS} --checkpoint-sync-url=${CHECKPOINT_SYNC_URL}"
+
+if [[ ! "${EXTRA_OPTS}" =~ .*"checkpoint-sync-url-timeout".* ]]; then
+     EXTRA_OPTS="${EXTRA_OPTS} --checkpoint-sync-url-timeout 300"
+fi
 
 case $_DAPPNODE_GLOBAL_EXECUTION_CLIENT_MAINNET in
 "geth.dnp.dappnode.eth")

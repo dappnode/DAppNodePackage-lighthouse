@@ -28,7 +28,7 @@
   },
   "license": "Apache-2.0",
   "requirements": {
-    "minimumDappnodeVersion": "0.2.60"
+    "minimumDappnodeVersion": "0.2.69"
   },
   "chain": {
     "driver": "ethereum-beacon-chain",
@@ -44,7 +44,7 @@
       "services": ["beacon-chain"]
     },
     {
-      "envs": ["MEVBOOST_MAINNET"],
+      "envs": ["MEVBOOST_MAINNET", "FEE_RECIPIENT_MAINNET"],
       "services": ["validator"]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "name": "lighthouse.dnp.dappnode.eth",
-  "version": "1.0.8",
-  "upstreamVersion": "v4.2.0",
+  "version": "1.0.9",
+  "upstreamVersion": "v4.3.0",
   "architectures": ["linux/amd64"],
   "upstreamRepo": "sigp/lighthouse",
   "shortDescription": "Lighthouse ETH2.0 Beacon chain + validator",

@@ -1,8 +1,8 @@
 {
   "name": "lighthouse.dnp.dappnode.eth",
   "version": "1.0.8",
-  "upstreamVersion": "v4.2.0",
-  "architectures": ["linux/amd64"],
+  "upstreamVersion": "v4.6.0",
+  "architectures": ["linux/amd64", "linux/arm64"],
   "upstreamRepo": "sigp/lighthouse",
   "shortDescription": "Lighthouse ETH2.0 Beacon chain + validator",
   "description": "Lighthouse is an Ethereum 2.0 client that connects to other Ethereum 2.0 clients to form a resilient and decentralized proof-of-stake blockchain.",

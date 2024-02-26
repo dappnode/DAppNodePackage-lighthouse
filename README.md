@@ -7,7 +7,3 @@ Lighthouse is an Ethereum consensus client that connects to other Ethereum conse
 We implement the specification as defined in the ethereum/consensus-specs repository.
 
 ![avatar](lighthouse-avatar.png)
-
-|      Updated       |   Champion/s    |
-| :----------------: | :-------------: |
-| :heavy_check_mark: | @pablomendez_95 |

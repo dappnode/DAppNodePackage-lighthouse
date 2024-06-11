@@ -1,39 +1,39 @@
 version: "3.4"
 services:
   beacon-chain:
-    image: "beacon-chain.lighthouse.dnp.dappnode.eth:0.1.0"
+    image: beacon-chain.lighthouse.dnp.dappnode.eth:0.1.0
     build:
       context: beacon-chain
       args:
-        UPSTREAM_VERSION: v5.1.3
+        UPSTREAM_VERSION: v5.2.0
     volumes:
-      - "beacon-data:/root/.lighthouse"
+      - beacon-data:/root/.lighthouse
     ports:
-      - "9104:9104/tcp"
-      - "9104:9104/udp"
+      - 9104:9104/tcp
+      - 9104:9104/udp
     restart: unless-stopped
     security_opt:
-      - "seccomp:unconfined"
+      - seccomp:unconfined
     environment:
       DEBUG_LEVEL: info
       BEACON_API_PORT: 3500
-      CORSDOMAIN: "http://lighthouse.dappnode"
+      CORSDOMAIN: http://lighthouse.dappnode
       P2P_PORT: 9104
       CHECKPOINT_SYNC_URL: ""
       EXTRA_OPTS: ""
   validator:
-    image: "validator.lighthouse.dnp.dappnode.eth:0.1.0"
+    image: validator.lighthouse.dnp.dappnode.eth:0.1.0
     build:
       context: validator
       args:
-        UPSTREAM_VERSION: v5.1.3
+        UPSTREAM_VERSION: v5.2.0
     restart: unless-stopped
     security_opt:
-      - "seccomp:unconfined"
+      - seccomp:unconfined
     environment:
       DEBUG_LEVEL: info
-      HTTP_WEB3SIGNER: "http://web3signer.web3signer.dappnode:9000"
-      BEACON_NODE_ADDR: "http://beacon-chain.lighthouse.dappnode:3500"
+      HTTP_WEB3SIGNER: http://web3signer.web3signer.dappnode:9000
+      BEACON_NODE_ADDR: http://beacon-chain.lighthouse.dappnode:3500
       GRAFFITI: validating_from_DAppNode
       EXTRA_OPTS: ""
       FEE_RECIPIENT_ADDRESS: ""

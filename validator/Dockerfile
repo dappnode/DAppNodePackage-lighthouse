@@ -1,5 +1,5 @@
 ARG UPSTREAM_VERSION
-FROM sigp/lighthouse:${UPSTREAM_VERSION}-modern
+FROM sigp/lighthouse:${UPSTREAM_VERSION}
 
 RUN apt-get update && apt-get install curl jq --yes
 # Copy token

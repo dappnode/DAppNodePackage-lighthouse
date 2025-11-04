@@ -1,3 +1,6 @@
+⚠️ **DEPRECATION NOTICE:**  
+This repository is deprecated. Please use the generic repository instead: [@dappnode/DAppNodePackage-lighthouse-generic](https://github.com/dappnode/DAppNodePackage-lighthouse-generic)
+
 # Lighthouse DAppNode package
 
 **Lighthouse ETH2.0 Beacon chain + validator**
